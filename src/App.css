@@ -1,0 +1,211 @@
+.body{
+  margin: 1100px;
+  padding: 0;
+  color:aliceblue;
+  background-color: aqua;
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+}
+
+.main{
+  display: grid;
+  margin-left: 30px;
+
+}
+
+
+.Details{
+  
+  justify-content: center;
+  position: absolute;
+  left:30%;
+  padding: 40px;  
+
+}
+
+
+
+.icon{
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 20px;
+}
+.icon_header{
+  vertical-align: middle;
+  line-height:1px;
+  font-size:  26px;
+}
+.icon, .icon_header{
+margin-right: 5px;
+}
+.grid-Container{
+  display: grid;
+  grid-template-columns:260px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas: 
+  'sidebar header header header'
+   'sidebar main main main';
+   height: 100vh;
+   background-color: rgb(210, 226, 132);
+}
+.header{
+  grid-area: header;
+  height: 60px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+}
+
+.menu-icons{
+  display:none;
+}
+.main-container{
+  grid-area: main;
+  padding: 20px 20px;
+  color: black;
+}
+.main-title{
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-cards{
+  display: grid;
+  grid-template-rows: 200px 200px;
+  gap:50px;
+  margin: 20px 20px 2px;
+  height: 250px;
+  width: 150px;
+  columns: 20px 20px;
+}
+.card{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+border-radius: 15px;
+border-color: rgb(13, 170, 79);
+border-style: double;
+background-color: rgb(129, 180, 152);
+
+
+}
+
+.card-inner{
+  row-gap: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992){
+  .grid-Container{
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 3fr;
+      grid-template-areas: 
+      'header'
+      'dashboard';
+  }
+  #sidebar{
+      display: none;
+  }
+  .menu-icons{
+      display:inline;
+  }
+}
+.Box{
+  display: grid;
+  grid-template-columns: 20px 20px ;
+  grid-template-rows: 20px 20px ;
+  gap: 50px;
+  height: 400px;
+  width: 100px;
+  margin-top: 20px;
+
+}
+.color{
+  height: 300px;
+  width: 200px;
+  color: aqua;
+
+}
+.container{
+  font-size: 20px;
+  content: right;
+  justify-content: left;
+  padding-right: 55px;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+.Color{
+  
+  display: flex;
+  margin-left: 1rem;
+  gap: 10px;
+  justify-content: space-between;
+}
+.img-box{
+  margin-left: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.border{
+  color: aqua;
+  height: fit-content;
+  margin-left: 300px;
+  box-shadow: 0px 0px  8px rgb(5, 6, 7);
+  background: transparent;
+  border-radius: 12px;
+
+}
+
+.search{
+  color: rgb(18, 26, 26);
+  border: #fff;
+}
+.Main{
+  margin-top: 12px;
+  padding-top: 12px;
+}
+.filter{
+  margin-top: 20px;
+  padding-left : 14px;
+  margin-left: 20px;
+}
+.name{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.bellow{
+  margin-left: 20px;
+}
+.search{
+  background: transparent;
+}
+.shop{
+  background: transparent;
+  border: none;
+  height: 20px;
+  width: 30px;
+  font-size: 20px;
+  
+}
+.sidebar{
+  margin-top: 2px;
+  height: 650px;
+  width: 200px;
+  background-color: rgb(226, 194, 152);
+  border-radius: 8px;
+}
+.bar{
+  margin-left: 30px;
+  font-size: 20px;
+}
+.list{
+  height: 20px;
+  width: 30px;
+  display: grid;
+  grid-template-columns: 750px 700px ;
+  margin-left: 20px;
+  grid-template-rows: 600px 400px;
+}
